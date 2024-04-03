@@ -1,0 +1,78 @@
+/* Style du corps de la page */
+body {
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Style du paragraphe dans la section principale de la collection */
+.main_collection > p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Cabin Condensed';
+}
+
+/* Style de la classe "collec" (section contenant les cartes de la collection) */
+.collec {
+    display: flex;
+    flex-wrap: wrap; /* Les cartes peuvent passer à la ligne en cas de besoin */
+    justify-content: center; 
+}
+
+/* Style de la section principale de la collection */
+.main_collection {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Style des cartes de la collection */
+.carte {
+    background: radial-gradient(white, grey); /* Fond dégradé radial de blanc à gris */
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    margin: 20px;
+    border: solid #FFD758; 
+    border-width: 10px; 
+    border-radius: 10px;
+    height: 355px;
+    width: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Style de l'image du Pokémon dans la carte */
+.picture_poke {
+    border: solid 4px #FFD758; 
+    background-image: url(UI/paysage_pixel.jpg); 
+}
+
+/* Style du texte dans la carte */
+.texte {
+    display: flex;
+    font-family: 'Cabin Condensed';
+    font-weight: 400;
+    margin-top: 30px; 
+}
+
+/* Style du titre du Pokémon dans la carte */
+.titre_poke {
+    font-family: 'Cabin Condensed';
+    font-size: 1em; 
+    font-weight: 900; 
+}
+
+/* Style du pied de page */
+.bas_autre {
+    padding-top: 100px;
+    width: 100%;
+}
+
+/* Style de l'image en bas de l'interface de la Super NES */
+.bas_supernes {
+    padding-top: 175px;
+    height: 120px;
+    width: 100%;
+}
+

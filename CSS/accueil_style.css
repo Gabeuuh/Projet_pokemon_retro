@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #010535;
+    height: 100vh;
+}
+
+.header_nav {
+    height: 120px;
+    width: 100%;
+    background-image: url(UI/assets_supernes_haut.png);
+    background-size: 100% 120px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style du menu de navigation */
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    gap: 100px;
+    position: relative;
+    top: 25px;
+}
+
+/* Style des éléments de navigation */
+
+.navitem {
+    flex-grow: 0;
+    font-family: 'Pixelify Sans';
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 1;
+    margin-left: 100px;
+}
+
+
+
+.navitem:visited {
+    color: black;
+}
+
+.navitem:hover {
+    color: red;
+}
+
+#connect {
+    font-family: 'Pixelify Sans';
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 1;
+    margin-left: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    background-color: rgb(197, 189, 189);
+}
+
+#disconnect {
+    font-family: 'Pixelify Sans';
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 1;
+    margin-left: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(197, 189, 189);
+
+}
+
+#form_deco {
+    position: absolute;
+    right: 10px;
+}
+
+
+
+#connect:hover {
+    background-color: grey;
+}
+
+#connect_popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgb(214, 201, 201);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.barre_bleu {
+    width: auto;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    justify-content: end;
+}
+
+#connect_popup h2 {
+    font-family: 'Pixelify Sans';
+}
+
+
+
+.main_accueil {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.container_bienvenue {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mess_bienvenue {
+    font-family: 'Pixelify Sans';
+    font-size: 40px;
+    align-self: center;
+    color: red;
+}
+
+#nom_dresseur {
+    font-family: 'Pixelify Sans';
+    font-size: 40px;
+    align-self: center;
+    color: red;
+}
+
+/* Style commun pour les sections "Ma collection" et "Attraper des pokemons" */
+
+.choix {
+    background-color: #010535;
+    width: 100px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.select_main_collection,
+.select_main_catalogue {
+    font-family: 'Pixelify Sans';
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    padding: 20px;
+    z-index: 1;
+}
+
+#haut_catalogue,
+#haut_collection {
+    order: -1;
+}
+
+#haut_catalogue,
+#haut_collection,
+#bas_collection,
+#bas_catalogue {
+    width: 500px;
+    opacity: 1;
+}
+
+/* Animations de la pokeball qui se referme */
+.select_main_collection:hover,
+.select_main_catalogue:hover {
+    color: transparent;
+}
+
+.select_main_collection:hover~#haut_collection,
+.select_main_catalogue:hover~#haut_catalogue {
+    transform: translate(0, 45px);
+    opacity: 1;
+}
+
+.select_main_collection:hover~#bas_collection,
+.select_main_catalogue:hover~#bas_catalogue {
+    transform: translate(0, -45px);
+    opacity: 1;
+}
+
+.boutton {
+    border: none;
+    background: rgb(214, 201, 201);
+}
+
+.bas_accueil {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bas_supernes_accueil {
+    height: 120px;
+    width: 100%;
+
+}
+
+/* Déclaration des polices */
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-weight: 400;
+    src: url('fonts/Pixelify/PixelifySans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-weight: 500;
+    src: url('fonts/Pixelify/PixelifySans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-weight: 600;
+    src: url('fonts/Pixelify/PixelifySans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-weight: 700;
+    src: url('fonts/Pixelify/PixelifySans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-weight: 400;
+    src: url(fonts/CabinCondensed/CabinCondensed-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-weight: 500;
+    src: url(fonts/CabinCondensed/CabinCondensed-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-weight: 600;
+    src: url(fonts/CabinCondensed/CabinCondensed-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-weight: 700;
+    src: url(fonts/CabinCondensed/CabinCondensed-Bold.ttf);
+}

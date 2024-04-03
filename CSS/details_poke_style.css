@@ -1,0 +1,176 @@
+/* Style pour la section principale des détails du Pokémon */
+.main_detail {
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    flex-direction: column;
+}
+
+/* Style pour la partie supérieure des détails */
+.haut_description {
+    display: flex;
+    justify-content: space-between;
+    border: solid grey;
+    border-width: 8px 8px 4px 8px;
+    background-color: #E0D898;
+}
+
+/* Style pour le bouton Pokémon suivant */
+.next_poke {
+    font-size: 30px;
+    font-family: "Pixelify Sans";
+    align-self: center;
+    padding-left: 32vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #048ABF;
+}
+
+.next_poke:hover {
+    cursor: pointer;
+    background-color: #187ea7;
+}
+
+/* Style pour la partie centrale des détails */
+.centre_description {
+    display: flex;
+    justify-content: left;
+}
+
+/* Style pour la partie gauche des détails */
+.desc_gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background-image: url(UI/fond_desc_poke.PNG);
+    border: solid grey;
+    border-width: 4px 4px 8px 8px;
+}
+
+.titre_desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.crayon {
+    height: 40px;
+    width: 40px;
+    border: black 3px;
+}
+
+.crayon_bouton {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#rename {
+    display: none;
+}
+
+h1 {
+    font-family: 'Pixelify Sans';
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Pixelify Sans';
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.img_poke_desc {
+    height: 400px;
+    width: 400px;
+}
+
+/* Style pour la partie centrale des détails */
+.desc_centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(UI/fond_desc_stat.PNG);
+    width: 25vw;
+    border: solid grey;
+    border-width: 4px 4px 8px 4px;
+}
+
+/* Style pour la partie droite des détails */
+.desc_droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(UI/fond_desc_stat.PNG);
+    align-items: center;
+    width: 25vw;
+    border: solid grey;
+    border-width: 4px 8px 8px 4px;
+}
+
+/* Style pour la partie inférieure des détails */
+.bas_description {
+    display: flex;
+    justify-content: center;
+    background-color: #E0D898;
+}
+
+/* Styles pour les boutons d'ajout et de retrait */
+#boutton_add,
+#boutton_remove {
+    height: 90px;
+    width: 90px;
+    background-color: #E0D898;
+    display: flex;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+.boutton_details {
+    border: none;
+    background-color: #E0D898;
+}
+
+#boutton_add:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+#boutton_remove:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* Style pour l'affichage de la quantité de Pokémon */
+.quantité_poke {
+    margin-left: 100px;
+    display: flex;
+}
+
+#number_poke {
+    margin-left: 30px;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 3px;
+    text-align: center;
+    font-family: 'Condensed Cabin';
+}
+
+/* Styles pour le pied de page */
+.bas_autre {
+    width: 100%;
+}
+
+.bas_supernes {
+    height: 120px;
+    width: 100%;
+}
